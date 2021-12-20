@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://meanapp:meanapp@123@cluster0.xqas2.mongodb.net/meandb?retryWrites=true&w=majority", (err) => {
+mongoose.connect("mongodb+srv://meanapp:meanapp@123@cluster0.xqas2.mongodb.net/meandb", (err) => {
     if (!err) {
         console.log('DB Connection Successfully');
     } else {
