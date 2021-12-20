@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://cluster0.xqas2.mongodb.net/meandb" --username meanapp --password meanapp@123", (err)=>{
+mongoose.connect("", (err)=>{
     if(!err){
         console.log('DB Connection Successfully');
     }else{
