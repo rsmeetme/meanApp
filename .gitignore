@@ -1,0 +1,50 @@
+.env
+node_modules
+
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/frontend/meanui/dist
+/frontend/meanui/tmp
+/frontend/meanui/out-tsc
+# Only exists if Bazel was run
+/frontend/meanui/bazel-out
+
+# dependencies
+/frontend/meanui/node_modules
+
+# profiling files
+chrome-profiler-events*.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/frontend/meanui/.angular/cache
+/frontend/meanui/.sass-cache
+/frontend/meanui/connect.lock
+/frontend/meanui/coverage
+/frontend/meanui/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
