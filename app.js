@@ -28,12 +28,12 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/api/users", usersRouter);
 app.use("/api/employees", employeesRouter);
 
-// if (process.env.NODE_ENV === "development") {
-app.use(express.static(path.join(__dirname, "dist/meanui")));
-app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "dist", "meanui", "index.html"));
-});
-// }
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static(path.join(__dirname, "dist/meanui")));
+    app.get("*", (req, res) => {
+        res.sendFile(path.resolve(__dirname, "dist", "meanui", "index.html"));
+    });
+}
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
