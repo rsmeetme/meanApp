@@ -3,7 +3,10 @@ require("dotenv").config();
 const connection = process.env.CONNECTION_STRING_SERVER;
 mongoose
     .connect(connection)
-    .then(() => console.log("Database Connected Successfully"))
+    .then(() => {
+        console.log("Database_URL", process.env.CONNECTION_STRING_SERVER);
+        console.log("Database Connected Successfully")
+    })
     .catch((err) => console.log(err));
 
 module.exports = mongoose;
